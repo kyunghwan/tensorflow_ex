@@ -1,4 +1,6 @@
 # https://github.com/rickiepark/first-steps-with-tensorflow
+# tensorflow_ex1
+
 import tensorflow as tf
 
 a = tf.placeholder("float")
