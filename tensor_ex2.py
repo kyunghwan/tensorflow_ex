@@ -1,4 +1,5 @@
-#tensorflow_ex2
+# tensorflow_ex2
+# data for linear regression
 
 import numpy as np
 import matplotlib.pyplot as plt

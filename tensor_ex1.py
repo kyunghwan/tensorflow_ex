@@ -1,5 +1,6 @@
 # https://github.com/rickiepark/first-steps-with-tensorflow
 # tensorflow_ex1
+# tensor basic
 
 import tensorflow as tf
 

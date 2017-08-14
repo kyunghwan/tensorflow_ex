@@ -1,4 +1,5 @@
-#tensorflow_ex3
+# tensorflow_ex3
+# linear regression 1
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -41,7 +42,7 @@ plt.ylabel('y')
 plt.show()
 """
 
-for step in range(8):
+for step in range(15):
     sess.run(train)
     print(step, sess.run(W), sess.run(b), sess.run(loss))
     plt.plot(x_data, y_data, 'ro')

@@ -1,4 +1,5 @@
-#tensorflow_ex4
+# tensorflow_ex4
+# linear regression 2
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -8,11 +9,11 @@ num_points = 1000
 vectors_set = []
 
 def square(list):
-    return [i ** 3 for i in list]
+    return [i ** 2 for i in list]
 
 for i in xrange(num_points):
     x1 = np.random.normal(0.0, 0.55)
-    y1 = 0.1 * pow(x1,3) + 0.3 + np.random.normal(0.0, 0.03)
+    y1 = 0.1 * pow(x1,2) + 0.3 + np.random.normal(0.0, 0.03)
     vectors_set.append([x1, y1])
 
 x_data = [v[0] for v in vectors_set]
@@ -46,7 +47,7 @@ plt.ylabel('y')
 plt.show()
 """
 
-for step in range(30):
+for step in range(10):
     sess.run(train)
     print(step, sess.run(W), sess.run(b), sess.run(loss))
 
